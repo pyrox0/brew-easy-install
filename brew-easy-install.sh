@@ -8,11 +8,11 @@
 
 # Set variables
 ##Set directory where we install brew
-DIR="${HOME}/.brew"
+export DIR="${HOME}/.brew"
 ## Set URL for brew download
-URL="https://github.com/Homebrew/brew/tarball/master"
+export URL="https://github.com/Homebrew/brew/tarball/master"
 ## Get OS Name
-OS="$(uname)"
+export OS="$(uname)"
 ## Make sire that homebrew uses the correct core tap.
 if [[ "$OS" == "Linux" ]]; then
         ## Set variables for a linux installation.
@@ -26,9 +26,9 @@ else
 fi
 
 ## Don't let brew send analytics during install.
-HOMEBREW_NO_ANALYTICS_THIS_RUN=1
+export HOMEBREW_NO_ANALYTICS_THIS_RUN=1
 ## Don't let homebrew tell us about analytics, as we'll disable them later anyways
-HOMEBREW_NO_ANALYTICS_MESSAGE_OUTPUT=1
+export HOMEBREW_NO_ANALYTICS_MESSAGE_OUTPUT=1
 
 # Make the directory for the brew install.
 mkdir "${DIR}"
