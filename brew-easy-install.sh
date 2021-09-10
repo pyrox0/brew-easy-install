@@ -41,7 +41,6 @@ touch "${HOME}/.bashrc"
 printf "Downloading tarball...\n"
 curl -L ${URL} | tar xz --strip 1 -C ${DIR}
 
-
 printf "Setting up shell environment...\n"
 
 # Add brew initialization lines to all your rc files.
@@ -58,6 +57,10 @@ echo 'HOMEBREW_NO_ANALYTICS=1' >> .profile
 echo 'HOMEBREW_NO_ANALYTICS=1' >> .bash_profile
 echo 'HOMEBREW_NO_ANALYTICS=1' >> .zprofile
 
+# Set stuff for current shell
+export HOMEBREW_NO_ANALYTICS=1
+`$HOME/.brew/bin/brew shellenv`
+
 # Disclaimers
 printf "\nDisclaimers:\n\n"
 printf "Since this uses a non-standard prefix, most things will be built\n"
@@ -70,4 +73,4 @@ printf "Aaron Rabach is not responsible for any stupid things that you \n"
 printf "\"brew install\". Thanks!\n\n"
 
 
-printf "Done! Please open a new shell to use brew!\n"
+printf "Done! Please try running \"brew\" to verify you've installed correctly!\n"
