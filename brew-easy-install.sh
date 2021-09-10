@@ -44,18 +44,18 @@ curl -L ${URL} | tar xz --strip 1 -C ${DIR}
 printf "Setting up shell environment...\n"
 
 # Add brew initialization lines to all your rc files.
-echo `$HOME/.brew/bin/brew shellenv` >> .zshrc
-echo `$HOME/.brew/bin/brew shellenv` >> .bashrc
-echo `$HOME/.brew/bin/brew shellenv` >> .profile
-echo `$HOME/.brew/bin/brew shellenv` >> .bash_profile
-echo `$HOME/.brew/bin/brew shellenv` >> .zprofile
+echo `$HOME/.brew/bin/brew shellenv` >> $HOME/.zshrc
+echo `$HOME/.brew/bin/brew shellenv` >> $HOME/.bashrc
+echo `$HOME/.brew/bin/brew shellenv` >> $HOME/.profile
+echo `$HOME/.brew/bin/brew shellenv` >> $HOME/.bash_profile
+echo `$HOME/.brew/bin/brew shellenv` >> $HOME/.zprofile
 
 # Disable Brew analytics
-echo 'HOMEBREW_NO_ANALYTICS=1' >> .zshrc
-echo 'HOMEBREW_NO_ANALYTICS=1' >> .bashrc
-echo 'HOMEBREW_NO_ANALYTICS=1' >> .profile
-echo 'HOMEBREW_NO_ANALYTICS=1' >> .bash_profile
-echo 'HOMEBREW_NO_ANALYTICS=1' >> .zprofile
+echo 'HOMEBREW_NO_ANALYTICS=1' >> $HOME/.zshrc
+echo 'HOMEBREW_NO_ANALYTICS=1' >> $HOME/.bashrc
+echo 'HOMEBREW_NO_ANALYTICS=1' >> $HOME/.profile
+echo 'HOMEBREW_NO_ANALYTICS=1' >> $HOME/.bash_profile
+echo 'HOMEBREW_NO_ANALYTICS=1' >> $HOME/.zprofile
 
 # Set stuff for current shell
 export HOMEBREW_NO_ANALYTICS=1
