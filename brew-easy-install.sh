@@ -29,7 +29,8 @@ fi
 export HOMEBREW_NO_ANALYTICS_THIS_RUN=1
 ## Don't let homebrew tell us about analytics, as we'll disable them later anyways
 export HOMEBREW_NO_ANALYTICS_MESSAGE_OUTPUT=1
-
+## Make array of rcfiles
+export RCFILES=(.zshrc .bashrc .profile .bash_profile .zprofile)
 # Make the directory for the brew install.
 mkdir "${DIR}"
 # Ensure that your .zshrc exists
@@ -43,19 +44,9 @@ curl -L ${URL} | tar xz --strip 1 -C ${DIR}
 
 printf "Setting up shell environment...\n"
 
+for file in RCFILES; echo `$HOME/.brew/bin/brew shellenv` >> "$HOME/$file"; done
 # Add brew initialization lines to all your rc files.
-echo `$HOME/.brew/bin/brew shellenv` >> $HOME/.zshrc
-echo `$HOME/.brew/bin/brew shellenv` >> $HOME/.bashrc
-echo `$HOME/.brew/bin/brew shellenv` >> $HOME/.profile
-echo `$HOME/.brew/bin/brew shellenv` >> $HOME/.bash_profile
-echo `$HOME/.brew/bin/brew shellenv` >> $HOME/.zprofile
-
-# Disable Brew analytics
-echo 'HOMEBREW_NO_ANALYTICS=1' >> $HOME/.zshrc
-echo 'HOMEBREW_NO_ANALYTICS=1' >> $HOME/.bashrc
-echo 'HOMEBREW_NO_ANALYTICS=1' >> $HOME/.profile
-echo 'HOMEBREW_NO_ANALYTICS=1' >> $HOME/.bash_profile
-echo 'HOMEBREW_NO_ANALYTICS=1' >> $HOME/.zprofile
+for file in RCFILES; echo 'HOMEBREW_NO_ANALYTICS=1' >> "$HOME/$file"; done
 
 # Set stuff for current shell
 export HOMEBREW_NO_ANALYTICS=1
