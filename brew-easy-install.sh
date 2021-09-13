@@ -44,9 +44,9 @@ curl -L ${URL} | tar xz --strip 1 -C ${DIR}
 
 printf "Setting up shell environment...\n"
 
-for file in RCFILES; echo `$HOME/.brew/bin/brew shellenv` >> "$HOME/$file"; done
+for file in "${RCFILES[@]}"; echo `$HOME/.brew/bin/brew shellenv` >> "$HOME/$file"; done
 # Add brew initialization lines to all your rc files.
-for file in RCFILES; echo 'HOMEBREW_NO_ANALYTICS=1' >> "$HOME/$file"; done
+for file in "${RCFILES[@]}"; echo 'HOMEBREW_NO_ANALYTICS=1' >> "$HOME/$file"; done
 
 # Set stuff for current shell
 export HOMEBREW_NO_ANALYTICS=1

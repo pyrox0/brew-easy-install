@@ -9,10 +9,10 @@ export DIR="${HOME}/.brew"
 
 export RCFILES=(.bashrc .bash_profile .zshrc .profile .zprofile)
 
-printf("Deleting variables...")
-for file in "${RCFILES[@]}"; do sed -i asdf '/HOMEBREW/d' "$file"; done
+printf("Deleting variables")
+for file in "${RCFILES[@]}"; do sed -i asdf '/HOMEBREW/d' "$HOME/$file"; done
 
-printf("Deleting ~/.brew...")
+printf("Deleting ~/.brew")
 rm -rf "${DIR}"
 
 printf("Done!")
