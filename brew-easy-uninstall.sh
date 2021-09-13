@@ -17,6 +17,3 @@ rm -rf "${DIR}"
 
 printf("Done!")
 
-return 0
-
-

@@ -75,4 +75,3 @@ printf "\"brew install\". Thanks!\n\n"
 
 printf "Done! Please try running \"brew\" to verify you've installed correctly!\n"
 
-return 0
