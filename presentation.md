@@ -68,11 +68,10 @@ author: Aaron Rabach
 
 - Type the next three lines, pressing Enter after each one.
 	- `cd Downloads`
-	- `xattr -d com.apple.quarantine ./brew-easy-install.sh`
 	- `chmod u+rwx ./brew-easy-install.sh`
 	- I will explain every command we have run once we are done.
 - Next, type this line, and press Enter.
-	- `zsh ./brew-easy-install.sh`
+	- `./brew-easy-install.sh`
 - Finally, type this line, and press Enter.
 	- `rm -f ./brew-easy-install.sh`
 
@@ -94,14 +93,6 @@ author: Aaron Rabach
 - `cd` stands for "Change Directory". It is a command that you can use on any machine that runs Linux or macOS.
 - The function of the command is to, well, change directories.
 	- Directory is just a fancy name for folder.
-- Any questions?
-
-## `xattr`
-
-- The structure of this command is `xattr [flags] [xattr] [file/folder]`
-- This command allows you to manipulate `Extended Attributes`, or `xattr`s for short.
-- What we do is use the -d flag, which tells it to delete the xattr from the file we specify.
-- So in this case, we delete the `com.apple.quarantine` xattr from the `./brew-easy-install.sh` file.
 - Any questions?
 
 ## `chmod`
