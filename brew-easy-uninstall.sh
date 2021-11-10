@@ -11,6 +11,8 @@ export RCFILES=(.bashrc .bash_profile .zshrc .profile .zprofile)
 
 printf "Deleting variables\n\n"
 for file in "${RCFILES[@]}"; do sed -i asdf '/HOMEBREW/d' "$HOME/$file"; done
+printf "Deleting backup files"
+for file in "${RCFILES[@]}"; do rm -rf "${file}asdf"; done
 
 printf "Deleting ~/.brew\n\n"
 rm -rf "${DIR}"
