@@ -11,26 +11,13 @@
 export DIR="${HOME}/.brew"
 ## Set URL for brew download
 export URL="https://github.com/Homebrew/brew/tarball/master"
-## Get OS Name
-export OS="$(uname)"
-## Make sire that homebrew uses the correct core tap.
-if [[ "$OS" == "Linux" ]]; then
-        ## Set variables for a linux installation.
-        HOMEBREW_CORE_DEFAULT_GIT_REMOTE="https://github.com/Homebrew/linuxbrew-core"
-        HOMEBREW_CACHE="${HOME}/.cache/Homebrew"
-        HOMEBREW_PREFIX_DEFAULT="${HOME}/.brew"
-else
-        ## Set variables for a macOS installation.
-        HOMEBREW_CORE_DEFAULT_GIT_REMOTE="https://github.com/Homebrew/homebrew-core"
-        HOMEBREW_CACHE="${HOME}/Library/Caches/Homebrew"
-fi
 
 ## Don't let brew send analytics during install.
 export HOMEBREW_NO_ANALYTICS_THIS_RUN=1
 ## Don't let homebrew tell us about analytics, as we'll disable them later anyways
 export HOMEBREW_NO_ANALYTICS_MESSAGE_OUTPUT=1
 ## Make array of rcfiles
-export RCFILES=(".zshrc .bashrc .profile .bash_profile .zprofile")
+export RCFILES=(".zshrc .bashrc")
 # Make the directory for the brew install.
 mkdir "${DIR}"
 # Ensure that your .zshrc exists
@@ -44,15 +31,11 @@ curl -L ${URL} | tar xz --strip 1 -C ${DIR}
 
 printf "Setting up shell environment...\n"
 
-for file in $RCFILES ;do echo `$HOME/.brew/bin/brew shellenv` >> "$HOME/$file"; done
+for file in $RCFILES ;do echo '$HOME/.brew/bin/brew shellenv' >> "$HOME/$file"; done
 # Add brew initialization lines to all your rc files.
 for file in $RCFILES ;do echo 'export HOMEBREW_NO_ANALYTICS=1' >> "$HOME/$file"; done
 # Make brew only install from api, no local repo clones
 for file in $RCFILES ;do echo 'export HOMEBREW_INSTALL_FROM_API=1' >> "$HOME/$file"; done
-
-# Set stuff for current shell
-export HOMEBREW_NO_ANALYTICS=1
-`$HOME/.brew/bin/brew shellenv`
 
 # Disclaimers
 printf "\nDisclaimers:\n\n"
