@@ -6,7 +6,7 @@
 
 # Set variables again
 export DIR="${HOME}/.brew"
-export CACHE="${HOME}/Library/Cache/Homebrew"
+export CACHE="${HOME}/Library/Caches/Homebrew"
 
 export RCFILES=(.bashrc .zshrc)
 
