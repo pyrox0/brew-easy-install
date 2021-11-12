@@ -5,13 +5,12 @@
 # Works on macOS and linux, requires no sudo
 # Installs to $HOME/.brew
 
-
 # Set variables
 ##Set directory where we install brew
 export DIR="${HOME}/.brew"
 ## Set URL for brew download
 export URL="https://github.com/Homebrew/brew/tarball/master"
-export RC_SETUP="brew_init () { eval \$(\$HOME/.brew/bin/brew shellenv) }\nbrew_init\nexport HOMEBREW_NO_ANALYTICS=1\nexport HOMEBREW_INSTALL_FROM_API=1"
+export RC_SETUP="brew_init () { eval \$(\$HOME/.brew/bin/brew shellenv) }\nbrew_init\nexport HOMEBREW_NO_ANALYTICS=1\nexport HOMEBREW_INSTALL_FROM_API=1\nalias brew_cleanup=\"brew cleanup -s\""
 ## Don't let brew send analytics during install.
 export HOMEBREW_NO_ANALYTICS_THIS_RUN=1
 ## Don't let homebrew tell us about analytics, as we'll disable them later anyways
