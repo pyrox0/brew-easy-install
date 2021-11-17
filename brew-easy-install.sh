@@ -10,7 +10,7 @@
 export DIR="${HOME}/.brew"
 ## Set URL for brew download
 export URL="https://github.com/Homebrew/brew/tarball/master"
-export RC_SETUP="brew_init () { eval \$(\$HOME/.brew/bin/brew shellenv) }\nbrew_init\nexport HOMEBREW_NO_ANALYTICS=1\nexport HOMEBREW_INSTALL_FROM_API=1\nalias brew_cleanup=\"brew cleanup -s\""
+export RC_SETUP="brew_init () { eval \$(\$HOME/.brew/bin/brew shellenv) }\nbrew_init\nexport HOMEBREW_NO_ANALYTICS=1\nexport HOMEBREW_INSTALL_FROM_API=1\nalias brew_cleanup=\"brew cleanup -s\"\nHOMEBREW_CASK_OPTS=\"--appdir=~/Applications\"\nHOMEBREW_INSTALL_BADGE="🐧\""
 ## Don't let brew send analytics during install.
 export HOMEBREW_NO_ANALYTICS_THIS_RUN=1
 ## Don't let homebrew tell us about analytics, as we'll disable them later anyways
