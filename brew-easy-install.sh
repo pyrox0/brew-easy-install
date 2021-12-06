@@ -16,7 +16,7 @@ export HOMEBREW_NO_ANALYTICS_THIS_RUN=1
 ## Don't let homebrew tell us about analytics, as we'll disable them later anyways
 export HOMEBREW_NO_ANALYTICS_MESSAGE_OUTPUT=1
 ## Make array of rcfiles
-export RCFILES=(".zshrc .bashrc")
+export RCFILES=(".zshrc .bashrc .profile")
 # Make the directory for the brew install.
 mkdir "${DIR}"
 # Ensure that your .zshrc exists
