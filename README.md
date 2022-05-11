@@ -48,7 +48,7 @@ time to exit. You're done!
 
 
 ## APCSP Students - 4th Quarter
-Type the following in the terminal: `brew install python`. Then type `python3 -m pip install 'gasp[games]'`. Then, start `python` and type in the following:
+Type the following in the terminal: `brew install python@3.10`. Then type `python3 -m pip install 'gasp[games]'`. Then, start `python` and type in the following:
 
 ```python
 from gasp import *
