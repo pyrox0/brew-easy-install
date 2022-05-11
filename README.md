@@ -1,4 +1,4 @@
-# brew-easy-install
+# brew-easy-install for APS students
 
 This is a script to easily install https://brew.sh to your home directory in `~/.brew`.
 
@@ -40,12 +40,21 @@ If you installed this before 6 December 2021, and you get `brew: command not fou
 ### IF YOU HAVE RUN THIS BEFORE, DON'T RUN THIS AGAIN!
 It doesn't check for previous installation lines, so it will add cruft to your rc file. Therefore, don't run this more than once without deleting the installation lines from your rc files first.
 
-## APCSP Students
+## APCSP Students - 1st/2nd Quarter
 Type the following in the Terminal: `brew install node`. This will take a longer time then the first command, and a lot more will happen. That's OK.
 
 Once that finishes, type `node` and press enter. If you get a prompt that looks like `>`, then you are good. Press Control and "D" at the same
 time to exit. You're done!
 
+
+## APCSP Students - 4th Quarter
+Type the following in the terminal: `brew install python`. Then type `python3 -m pip install 'gasp[games]'`. Then, start `python` and type in the following:
+
+```python
+from gasp import *
+```
+
+If this prints nothing, then you were successful in installing GASP.
 
 ## CSC 205 Students
 Run these 2 commands:
