@@ -48,7 +48,7 @@ time to exit. You're done!
 
 
 ## APCSP Students - 4th Quarter
-Type the following in the terminal: `brew install python@3.9`, then `brew install sqlite`, then `brew install python-tk@3.9`. Then type `python3 -m pip install gasp`. Then, start `python3` and type in the following:
+Type the following in the terminal: `brew install python@3.9`, then `brew install sqlite`, then `brew install python-tk@3.9`. Then, in a new terminal tab(Type <kbd>Cmd</kbd> and <kbd>t</kbd> at the same time) type `python3 -m pip install gasp`. Then, start `python3` and type in the following:
 
 ```python
 from gasp import *
