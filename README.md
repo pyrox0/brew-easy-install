@@ -50,8 +50,18 @@ Type the following in the terminal: `brew install python@3.10`, then `brew insta
 ```python
 from gasp import *
 ```
-
 If this prints nothing, then you were successful in installing GASP.
+
+## ITE 140 Students
+Type the following in the terminal, pressing <kbd>Enter</kbd> after each command
+
+```sh
+brew install python@3.10
+python3 -m pip install numpy
+python3 -m pip install pandas
+```
+After this, you should be good to go!
+
 
 ## CSC 205 Students
 Run these 2 commands:
