@@ -45,7 +45,7 @@ time to exit. You're done!
 
 
 ## APCSP Students - 4th Quarter
-Type the following in the terminal: `brew install python@3.9`, then `brew install sqlite`, then `brew install python-tk@3.9`. Next, type in `brew link --force tcl-tk`. Then, in a new terminal tab(Type <kbd>Cmd</kbd> and <kbd>t</kbd> at the same time) type `python3 -m pip install gasp`. Then, type in `python3`, press <kbd>Enter</kbd>, and type in the following:
+Type the following in the terminal: `brew install python@3.10`, then `brew install sqlite`, then `brew install python-tk@3.10`. Next, type in `brew link --force tcl-tk`. Then, in a new terminal tab(Type <kbd>Cmd</kbd> and <kbd>t</kbd> at the same time) type `python3 -m pip install gasp`. Then, type in `python3`, press <kbd>Enter</kbd>, and type in the following:
 
 ```python
 from gasp import *
@@ -56,7 +56,7 @@ If this prints nothing, then you were successful in installing GASP.
 ## CSC 205 Students
 Run these 2 commands:
 
-`brew tap moddedgamers/retro-tools`
+`brew tap thehedgehog0/retro-tools`
 
 and
 
