@@ -31,7 +31,7 @@ Next, type this in and press enter:
 `sh Downloads/brew-easy-install.sh`
 
 Once that gives you your prompt back, open a new terminal tab by pressing Command and "T" at the same time.
-then, type `brew` and press enter to test. Once that's done, proceed to the appropriate section
+then, type `brew` and press enter to test. Once that's done, type `brew tap homebrew/core`, and then proceed to the appropriate section below.
 
 ## Warnings
 ### IF YOU HAVE RUN THIS BEFORE, DON'T RUN THIS AGAIN!
