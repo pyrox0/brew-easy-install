@@ -57,6 +57,7 @@ Type the following in the terminal, pressing <kbd>Enter</kbd> after each command
 
 ```sh
 brew install python@3.10
+python3 -m pip install --upgrade pip
 python3 -m pip install numpy
 python3 -m pip install pandas
 ```
