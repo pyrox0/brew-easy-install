@@ -37,14 +37,7 @@ then, type `brew` and press enter to test. Once that's done, type `brew tap home
 ### IF YOU HAVE RUN THIS BEFORE, DON'T RUN THIS AGAIN!
 It doesn't check for previous installation lines, so it will add cruft to your rc file. Therefore, don't run this more than once without deleting the installation lines from your rc files first.
 
-## APCSP Students - 1st/2nd Quarter
-Type the following in the Terminal: `brew install node`. This will take a longer time then the first command, and a lot more will happen. That's OK.
-
-Once that finishes, type `node` and press enter. If you get a prompt that looks like `>`, then you are good. Press Control and "D" at the same
-time to exit. You're done!
-
-
-## APCSP Students - 4th Quarter
+## APCSP Students
 Type the following in the terminal: `brew install python@3.10`, then `brew install sqlite`, then `brew install python-tk@3.10`. Next, type in `brew link --force tcl-tk`. Then, in a new terminal tab(Type <kbd>Cmd</kbd> and <kbd>t</kbd> at the same time) type `python3 -m pip install gasp`. Then, type in `python3`, press <kbd>Enter</kbd>, and type in the following:
 
 ```python
