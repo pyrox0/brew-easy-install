@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Brew Easy Installer for APSVA
-# By Aaron Rabach
+# By The Hedgehog
 # Created on 30-31 August 2021
 # Works on macOS and linux, requires no sudo
 # Installs to $HOME/.brew
