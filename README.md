@@ -49,7 +49,7 @@ If this prints nothing, then you were successful in installing GASP.
 Run the following commands:
 ```sh
 unset HOMEBREW_INSTALL_FROM_API
-brew install psql
+brew install libpq
 ```
 
 ## ITE 140 Students - Python Steps
