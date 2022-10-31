@@ -45,7 +45,14 @@ from gasp import *
 ```
 If this prints nothing, then you were successful in installing GASP.
 
-## ITE 140 Students
+## ITE 140 Students - `psql` install steps
+Run the following commands:
+```sh
+unset HOMEBREW_INSTALL_FROM_API
+brew install psql
+```
+
+## ITE 140 Students - Python Steps
 Type the following in the terminal, pressing <kbd>Enter</kbd> after each command
 
 ```sh
