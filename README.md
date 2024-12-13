@@ -16,12 +16,8 @@ Make an issue if you encounter any problems!
 
 # Free Up Space
 If you don't use GarageBand, please follow these steps first.
-* Open the Apple menu in the top left.
-* Click "About This Mac"
-* Click the "Storage" button
-* Click "Manage Storage"
-* Click "Music Creation" on the left side
-* Press the removal button in the middle and confirm it. This will free up 20GB of storage on your computer.
+* Open "APS Self Service" (You can get to this from Launchpad)
+* Search for and run a program with a name called something like "Uninstall GarageBand"
 
 # Common Installation Steps
 Right-click and click "Save as..." on [this link.](https://raw.githubusercontent.com/pyrox0/brew-easy-install/main/brew-easy-install.sh)
