@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Brew Easy Installer for APSVA
-# By The Hedgehog
+# By Pyrox
 # Created on 30-31 August 2021
 # Works on macOS and linux, requires no sudo
 # Installs to $HOME/.brew
@@ -37,6 +37,6 @@ printf "\nDisclaimers:\n\n"
 printf "Since this uses a non-standard prefix, most things will be built\n"
 printf "from source.\n\n "
 printf "Things may take a while. Please yell at APS to let us install brew\n\n"
-printf "Aaron Rabach is not responsible for any stupid things that you \n"
+printf "Pyrox is not responsible for any stupid things that you \n"
 printf "\"brew install\". Thanks!\n\n"
 printf "Done!"
