@@ -1,5 +1,5 @@
 # Brew easy uninstall script for APSVA
-# By Aaron Rabach
+# By Pyrox
 # September 2021
 # Only use this if you used my install script from this repo
 # It won't work otherwise.
