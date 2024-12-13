@@ -1,6 +1,6 @@
 ---
 title: Brew Installation(No Root Edition)
-author: Aaron Rabach
+author: Pyrox Rabach
 ...
 
 # Intro
@@ -42,7 +42,7 @@ author: Aaron Rabach
 ## Other requirements
 
 - You need my script.
-- You can find the script at [Github](https://github.com/ModdedGamers/brew-easy-install)
+- You can find the script at [Github](https://github.com/pyrox0/brew-easy-install)
 - Download the `brew-easy-install.sh` script, and save that in your Downloads folder.
 
 # How?
