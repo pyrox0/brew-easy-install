@@ -24,7 +24,7 @@ If you don't use GarageBand, please follow these steps first.
 * Press the removal button in the middle and confirm it. This will free up 20GB of storage on your computer.
 
 # Common Installation Steps
-Right-click and click "Save as..." on [this link.](https://raw.githubusercontent.com/ModdedGamers/brew-easy-install/main/brew-easy-install.sh)
+Right-click and click "Save as..." on [this link.](https://raw.githubusercontent.com/pyrox0/brew-easy-install/main/brew-easy-install.sh)
 Next, press Command and the spacebar at the same time, type in "Terminal"(without quotes), and press Enter.
 Next, type this in and press enter:
 
@@ -67,7 +67,7 @@ After this, you should be good to go!
 ## CSC 205 Students
 Run these 2 commands:
 
-`brew tap thehedgehog0/retro-tools`
+`brew tap pyrox0/retro-tools`
 
 and
 
