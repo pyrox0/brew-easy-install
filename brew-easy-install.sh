@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-# Brew Easy Installer for APSVA
+# Brew Easy Installer
 # By Pyrox
 # Created on 30-31 August 2021
+# Last update: 05 Oct 2026
 # Works on macOS and linux, requires no sudo
 # Installs to $HOME/.brew
 
@@ -9,7 +10,7 @@
 ##Set directory where we install brew
 export DIR="${HOME}/.brew"
 ## Set URL for brew download
-export URL="https://github.com/Homebrew/brew/tarball/master"
+export URL="https://github.com/Homebrew/brew/tarball/main"
 
 export RC_SETUP="
   brew_init () { eval \$(\$HOME/.brew/bin/brew shellenv) }
